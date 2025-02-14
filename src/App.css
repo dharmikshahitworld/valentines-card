@@ -1,47 +1,102 @@
 /* Apply custom Google Font */
 body {
   font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
-/* Heart Container to Center the Heart */
+/* Floating Hearts Background Animation */
+@keyframes floatingHearts {
+  0% {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+}
+
+.floating-heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+  animation: floatingHearts 5s linear infinite;
+  opacity: 0.6;
+}
+
+/* Generate multiple floating hearts */
+.floating-heart:nth-child(1) {
+  left: 10%;
+  animation-duration: 6s;
+}
+
+.floating-heart:nth-child(2) {
+  left: 30%;
+  animation-duration: 4s;
+}
+
+.floating-heart:nth-child(3) {
+  left: 50%;
+  animation-duration: 5s;
+}
+
+.floating-heart:nth-child(4) {
+  left: 70%;
+  animation-duration: 7s;
+}
+
+.floating-heart:nth-child(5) {
+  left: 90%;
+  animation-duration: 6s;
+}
+
+/* Heart Container */
 .heart-container {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: -60px; /* Adjusted to prevent overlap */
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* Enlarged & Fixed Animated Heart */
+/* Glowing Animated Heart */
 .heart {
-  width: 80px;  /* Increased size */
-  height: 80px;
+  width: 90px;
+  height: 90px;
   background-color: red;
   position: relative;
   transform: rotate(-45deg);
-  animation: heartbeat 1s infinite alternate;
+  animation: heartbeat 1s infinite alternate, glow 1.5s infinite ease-in-out;
 }
 
-/* Rounded Lobes (Fixed for 80px Size) */
+/* Rounded Lobes */
 .heart::before,
 .heart::after {
   content: "";
-  width: 80px; /* Match the main heart size */
-  height: 80px;
+  width: 90px;
+  height: 90px;
   background-color: red;
   border-radius: 50%;
   position: absolute;
 }
 
 .heart::before {
-  top: -40px; /* Adjusted for correct alignment */
+  top: -45px;
   left: 0;
 }
 
 .heart::after {
-  left: 40px; /* Adjusted for correct alignment */
+  left: 45px;
   top: 0;
 }
 
@@ -55,24 +110,63 @@ body {
   }
 }
 
-/* Valentine's Title - "Dear Hiral..." */
+/* Glow Effect */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
+  }
+}
+
+/* Card Styling */
+.card {
+  position: relative;
+  padding-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Valentine's Title */
 .valentine-title {
-  font-size: 26px;
+  font-size: 28px;
   font-family: "Dancing Script", cursive;
   color: #e63946;
   font-weight: bold;
-  margin-top: 50px; /* Adjusted to avoid overlap */
+  margin-top: 50px;
+  animation: fadeIn 2s ease-in-out;
 }
 
 /* Valentine's Day Message */
 .valentine-main-title {
-  font-size: 22px;
-  color: #d6336c;
+  font-size: 24px;
+  color: #1a237e;
   margin-top: 10px;
+  font-weight: bold;
+  animation: fadeIn 2.5s ease-in-out;
 }
 
 .valentine-message {
   font-size: 16px;
   color: #444;
-  margin-top: 8px;
+  margin-top: 10px;
+  animation: fadeIn 3s ease-in-out;
 }
