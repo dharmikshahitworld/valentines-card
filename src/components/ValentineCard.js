@@ -1,10 +1,10 @@
 import React from "react";
 import "@fontsource/dancing-script";
-{/* <div className="position-absolute top-0 text-dark fw-lighter text-center">Mission accomplished! Live site updated only for you Hiral ☺️</div> */}
 
 const ValentineCard = () => {
   return (
     <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
+      <div className="position-absolute top-0 text-dark fw-lighter text-center">Mission accomplished! Live site updated only for you Hiral 🤪</div>
       {/* Floating Hearts Animation */}
       <div className="floating-heart"></div>
       <div className="floating-heart"></div>
