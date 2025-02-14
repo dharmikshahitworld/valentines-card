@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/valentines-card/static/css/main.a8d91f64.css",
-    "main.js": "/valentines-card/static/js/main.93414161.js",
+    "main.css": "/valentines-card/static/css/main.389706ad.css",
+    "main.js": "/valentines-card/static/js/main.a28450d0.js",
+    "static/media/dancing-script-latin-400-normal.woff": "/valentines-card/static/media/dancing-script-latin-400-normal.a5ce473263c516dc070e.woff",
+    "static/media/dancing-script-latin-400-normal.woff2": "/valentines-card/static/media/dancing-script-latin-400-normal.b3f0ff28f420da0283fc.woff2",
+    "static/media/dancing-script-latin-ext-400-normal.woff": "/valentines-card/static/media/dancing-script-latin-ext-400-normal.87ae00f06aafc5c964ba.woff",
+    "static/media/dancing-script-latin-ext-400-normal.woff2": "/valentines-card/static/media/dancing-script-latin-ext-400-normal.01bd5f7f506a07d5a59f.woff2",
+    "static/media/dancing-script-vietnamese-400-normal.woff": "/valentines-card/static/media/dancing-script-vietnamese-400-normal.581d33ad885c19d66017.woff",
+    "static/media/dancing-script-vietnamese-400-normal.woff2": "/valentines-card/static/media/dancing-script-vietnamese-400-normal.389f8b05090f0e471f76.woff2",
     "index.html": "/valentines-card/index.html",
-    "main.a8d91f64.css.map": "/valentines-card/static/css/main.a8d91f64.css.map",
-    "main.93414161.js.map": "/valentines-card/static/js/main.93414161.js.map"
+    "main.389706ad.css.map": "/valentines-card/static/css/main.389706ad.css.map",
+    "main.a28450d0.js.map": "/valentines-card/static/js/main.a28450d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8d91f64.css",
-    "static/js/main.93414161.js"
+    "static/css/main.389706ad.css",
+    "static/js/main.a28450d0.js"
   ]
 }
