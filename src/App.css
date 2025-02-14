@@ -1,0 +1,79 @@
+/* Bootstrap already handles background */
+body {
+  font-family: "Arial", sans-serif;
+}
+
+/* Heart Container to Center the Heart */
+.heart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Animated Heart */
+.heart {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  transform: rotate(-45deg);
+  animation: heartbeat 1s infinite alternate;
+}
+
+/* Left and Right Rounded Lobes */
+.heart::before,
+.heart::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -25px;
+  left: 0;
+}
+
+.heart::after {
+  left: 25px;
+  top: 0;
+}
+
+/* Heartbeat Animation */
+@keyframes heartbeat {
+  from {
+    transform: rotate(-45deg) scale(1);
+  }
+  to {
+    transform: rotate(-45deg) scale(1.2);
+  }
+}
+
+/* Card Styling */
+.card {
+  position: relative;
+  padding-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.valentine-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d6336c;
+  margin-top: 20px;
+}
+
+/* Text Styling */
+.valentine-message {
+  font-size: 16px;
+  color: #444;
+  margin-top: 8px;
+}
