@@ -1,12 +1,8 @@
-import './App.css';
 import ValentineCard from './components/ValentineCard';
+import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <ValentineCard />
-    </div>
-  );
+  return <ValentineCard />
 }
 
 export default App;

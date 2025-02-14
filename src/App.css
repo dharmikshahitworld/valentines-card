@@ -1,4 +1,4 @@
-/* Bootstrap already handles background */
+/* Apply custom Google Font */
 body {
   font-family: "Arial", sans-serif;
 }
@@ -9,39 +9,39 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: -40px;
+  top: -60px; /* Adjusted to prevent overlap */
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* Animated Heart */
+/* Enlarged & Fixed Animated Heart */
 .heart {
-  width: 50px;
-  height: 50px;
+  width: 80px;  /* Increased size */
+  height: 80px;
   background-color: red;
   position: relative;
   transform: rotate(-45deg);
   animation: heartbeat 1s infinite alternate;
 }
 
-/* Left and Right Rounded Lobes */
+/* Rounded Lobes (Fixed for 80px Size) */
 .heart::before,
 .heart::after {
   content: "";
-  width: 50px;
-  height: 50px;
+  width: 80px; /* Match the main heart size */
+  height: 80px;
   background-color: red;
   border-radius: 50%;
   position: absolute;
 }
 
 .heart::before {
-  top: -25px;
+  top: -40px; /* Adjusted for correct alignment */
   left: 0;
 }
 
 .heart::after {
-  left: 25px;
+  left: 40px; /* Adjusted for correct alignment */
   top: 0;
 }
 
@@ -55,23 +55,22 @@ body {
   }
 }
 
-/* Card Styling */
-.card {
-  position: relative;
-  padding-top: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Title */
+/* Valentine's Title - "Dear Hiral..." */
 .valentine-title {
-  font-size: 24px;
+  font-size: 26px;
+  font-family: "Dancing Script", cursive;
+  color: #e63946;
   font-weight: bold;
-  color: #d6336c;
-  margin-top: 20px;
+  margin-top: 50px; /* Adjusted to avoid overlap */
 }
 
-/* Text Styling */
+/* Valentine's Day Message */
+.valentine-main-title {
+  font-size: 22px;
+  color: #d6336c;
+  margin-top: 10px;
+}
+
 .valentine-message {
   font-size: 16px;
   color: #444;
